@@ -1613,14 +1613,13 @@
                 </div>
                 <ul class="exp-points">
                     <li>
-                        Designed and implemented a <strong>speech-controlled robotic arm</strong> using a CNN 
-                        trained on MFCC features, achieving approximately <strong>92% validation accuracy</strong> 
-                        across 6 voice command classes.
+                        Implemented <strong>SRDiff</strong> in PyTorch, applying Denoising Diffusion Probabilistic Models (DDPM) conditioned on RRDB-extracted LR features for <strong>4× single-image super-resolution</strong> on the DIV2K benchmark.
                     </li>
                     <li>
-                        Integrated a real-time voice recognition pipeline in <strong>Python</strong> with 
-                        <strong>Arduino Uno</strong> via PySerial, enabling end-to-end control of servo motors 
-                        for base rotation, joint articulation, and gripper operations.
+                        Developed a residual diffusion formulation operating on the HR–bicubic difference, reducing target variance and improving training stability across <strong>2000 diffusion timesteps</strong>.
+                    </li>
+                    <li>
+                        Evaluated reconstruction quality using PSNR, SSIM, and LPIPS metrics, achieving <strong>superior perceptual quality</strong> compared to regression-based (SRCNN) and GAN-based (ESRGAN) baselines.
                     </li>
                 </ul>
             </div>
@@ -1760,27 +1759,55 @@
                 <div class="project-card reveal reveal-delay-2">
                     <div class="project-image">
                         <div class="project-image-bg">
-                            <i class="fas fa-image" style="color: rgba(99, 255, 218, 0.5); font-size: 4rem;"></i>
+                            <i class="fas fa-robot" style="color: rgba(99, 255, 218, 0.5); font-size: 4rem;"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/jailsingh2022/SRdiff" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/jailsingh2022/Speech-recognised-robot" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
                         <p class="project-date">December 2024</p>
-                        <h3 class="project-title">SRDiff — Single Image Super-Resolution</h3>
+                        <h3 class="project-title">Speech Recognition Controlled Robot</h3>
                         <ul class="project-highlights">
-                            <li>Implemented <strong>SRDiff</strong> in PyTorch using Denoising Diffusion Probabilistic Models (DDPM) for <strong>4× super-resolution</strong></li>
-                            <li>Residual diffusion formulation on HR–bicubic difference with <strong>2000 diffusion timesteps</strong></li>
-                            <li>Achieved <strong>superior perceptual quality</strong> vs. SRCNN and ESRGAN baselines (PSNR, SSIM, LPIPS)</li>
+                            <li>Built a real-time speech recognition pipeline using <strong>Vosk</strong> and <strong>TensorFlow</strong>, achieving <strong>~90–95% accuracy</strong> across 8 voice commands using MFCC-based feature extraction.</li>
+                            <li>Engineered an end-to-end voice-controlled robotic system, integrating <strong>Python</strong> with <strong>Arduino</strong> to translate speech into low-latency (&#60;300 ms) serial commands for precise robot control.</li>
                         </ul>
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>PyTorch</span>
-                            <span>DDPM</span>
-                            <span>U-Net</span>
-                            <span>RRDB</span>
-                            <span>DIV2K</span>
+                            <span>TensorFlow</span>
+                            <span>Vosk</span>
+                            <span>Librosa</span>
+                            <span>PyAudio</span>
+                            <span>Arduino</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-image">
+                        <div class="project-image-bg">
+                            <i class="fas fa-chart-line" style="color: rgba(223, 160, 126, 0.5); font-size: 4rem;"></i>
+                        </div>
+                        <!-- Avoid GitHub link for this project per user request -->
+                        <div class="project-overlay" style="cursor: default;">
+                            <span style="color: white; font-weight: 500;"><i class="fas fa-lock" style="margin-right: 0.5rem;"></i>Private source</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-date">December 2024</p>
+                        <h3 class="project-title">GlobalMart Sales ETL & Dashboard</h3>
+                        <ul class="project-highlights">
+                            <li>Engineered an automated ETL pipeline using <strong>Power Query</strong> and <strong>Python</strong> (psycopg2, pandas) to extract, clean, and centralize unstructured sales data from 6 sources into a <strong>PostgreSQL</strong> database.</li>
+                            <li>Designed a Star-Schema data model and deployed an interactive <strong>Streamlit</strong> web dashboard utilizing <strong>Plotly</strong> to query and visualize over 15,000 sales records.</li>
+                            <li>Authored complex SQL queries and built a comprehensive 4-page <strong>Power BI</strong> executive summary report to track critical KPIs and forecast regional sales.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>PostgreSQL</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Streamlit</span>
                         </div>
                     </div>
                 </div>
